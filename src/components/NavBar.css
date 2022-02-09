@@ -1,0 +1,125 @@
+.navbar {
+  height: 80px;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #000 url("../img/stars_bg.png") center/cover no-repeat;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.nav-logo img {
+  align-items: center;
+  cursor: pointer;
+  width: 150.92px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transition: 0.3s;
+}
+.nav-links:hover {
+  color: #fff;
+}
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  line-height: 40px;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #ffdd40;
+}
+
+.nav-item .active {
+  color: #ffdd40;
+  border-bottom: 3px solid #ffdd40;
+  border-left: 3px solid #ffdd40;
+}
+
+.nav-icon {
+  display: none;
+}
+.contact_item{
+  background: transparent;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: transparent;
+}
+.contack_items {
+  width: 140px;
+  height: 45px;
+  background: #ffd100;
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .contack_item{
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding-left: 0 !important;
+  }
+
+  .nav-menu.active {
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item .active {
+    color: #ffdd40;
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    margin-top: -6px;    
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ffdd40;
+  }
+}
