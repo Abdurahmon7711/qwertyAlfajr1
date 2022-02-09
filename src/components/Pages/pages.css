@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+#home {
+  background: #000 url(../../img/stars_bg.png) center repeat;
+  height: 80vh;
+}
 .sec_name {
   text-align: center;
 }
@@ -33,10 +38,10 @@
   font-size: 24px;
   line-height: 32px;
   text-align: justify;
-
   color: #b0b1b5;
 }
 .about_btn {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +74,12 @@
   border: none !important;
   box-shadow: none;
 }
+.about_img {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
 
 #portfolio {
   background: #000 url(../../img/stars_bg.png) center repeat;
@@ -100,9 +111,9 @@
   display: flex;
   margin: auto;
   height: 320px;
-  width: 80%;
+  width: 100% !important;
   object-fit: cover;
-  width: 320px;
+  width: 320px !important;
 }
 .items {
   display: flex;
@@ -110,6 +121,9 @@
   align-items: center;
   margin-bottom: 80px;
   background: #252428;
+  width: 320px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -146,4 +160,235 @@
 
 #contack {
   background: #000 url(../../img/stars_bg.png) center repeat;
+}
+.contacmain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contackForm input {
+  background: #252428;
+  border-radius: 15px;
+  height: 54px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #b0b1b5;
+}
+.contackTextarea {
+  background: #252428;
+  border-radius: 15px;
+  height: 222px;
+  border: none;
+  outline: none;
+  padding-top: 15px;
+  padding-left: 30px;
+  margin-bottom: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #b0b1b5;
+}
+.karta {
+  display: flex;
+  justify-content: center;
+}
+.karta iframe {
+  width: 90%;
+  border-radius: 20px;
+  height: 387px;
+  margin-top: 90px;
+}
+.form_btn {
+  width: 182px;
+  height: 61px;
+}
+.contack_btn {
+  display: flex;
+  flex-direction: column;
+}
+#footer {
+  padding-top: 80px;
+  background: #000 url(../../img/stars_bg.png) center repeat;
+  text-align: center;
+}
+
+#footer p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: #ffffff;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+#footer span {
+  font-weight: 100;
+  font-family: Roboto;
+  font-style: thin;
+  font-size: 14px;
+  line-height: 171.69%;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: #ffffff;
+}
+
+
+
+@media (min-width: 992px) {
+  
+  #Team {
+    background: #000 url("../../img/team_bg.png") center/cover no-repeat;
+    width: 100%;
+    height: 1024px;
+  }
+  .team_imgs {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .team1 {
+    position: absolute;
+    width: 284px;
+    height: 376px;
+    right: 22px;
+    top: 24px;
+    border-radius: 15px;
+  }
+  .team_img8 {
+    position: relative;
+    position: absolute;
+    width: 284px;
+    height: 341px;
+    right: 22px;
+    top: 425px;
+    background: rgba(224, 224, 224, 0.93);
+    border-radius: 10px 0px 0px 10px;
+  }
+  .team8 {
+    position: absolute;
+    width: 181px;
+    height: 181px;
+    top: 41px;
+    right: 54px;
+  }
+  .team4 {
+    width: 284px;
+    height: 214px;
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+  }
+  
+  .team2 {
+    top: 146px;
+    position: absolute;
+    right: 330px;
+    width: 284px;
+    height: 323px;
+  }
+  .team3 {
+    top: 557px;
+    right: 330px;
+    position: absolute;
+    width: 538px;
+    height: 248px;
+    border-radius: 10px;
+    border: 2px solid red;
+  }
+  .team7 {
+    position: absolute;
+    width: 341px;
+    height: 168px;
+    right: 330px;
+    bottom: 22px;
+    border-radius: 4px;
+  }
+  .team5 {
+    position: absolute;
+    width: 349px;
+    height: 318px;
+    left: 22px;
+    top: 684px;
+  }
+  .team6 {
+    position: absolute;
+    width: 255px;
+    height: 237px;
+    left: 371px;
+    top: 258px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-menu.active{
+    background: rgba(0, 0, 0, 0.741) !important;
+  }
+  .contack_items{
+    display: none;
+  }
+  .about_img {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .port_button {
+    flex-wrap: wrap;
+  }
+  .port_btn {
+    margin-bottom: 20px !important;
+  }
+  .contack_btn {
+    width: 100%;
+  }
+  .karta iframe {
+    height: 280px;
+  }
+  #Team {
+    background: #000 url("../../img/team_bg.png") center/contain;
+    width: 100%;
+    height: 100%;
+  }
+  .team_imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  
+  }
+  .team_img{
+    width: 300px;
+    height: 260px;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .team_num{
+    width: 320px;
+    border-radius: 5px;
+    height: 340px;
+    transform: scale(1.0);
+    object-fit: cover;
+    transition: 0.3s;
+  }
+  .team_num:hover{
+    transform: scale(1.2);
+  }
+  
 }
