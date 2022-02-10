@@ -30,8 +30,11 @@ export const About = () => {
                   activeClassName="active"
                   onClick={handleClick}
                 >
-                  Contact Us
+                  Our Team
                 </NavLink>
+                <Link to="/team11">
+                  ddddddddd
+                </Link>
            
             </div>
             <div className="col-lg-6 col-sm-12">
