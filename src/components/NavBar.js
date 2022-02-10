@@ -20,48 +20,40 @@ function NavBar() {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
+              <a
+                href="#home"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Home
-              </NavLink>
+               Home
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
-                exact
-                to="/about"
-                activeClassName="active"
+              <a
+                href="#about"
                 className="nav-links"
                 onClick={handleClick}
               >
-                About
-              </NavLink>
+               About
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
-                exact
-                to="/blog"
-                activeClassName="active"
+              <a
+                href="#portfolio"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Portfolio
-              </NavLink>
+              </a>
             </li>
             <li className="nav-item">
-              <NavLink
-                exact
-                to="/contact"
-                activeClassName="active"
+              <a
+                href="#contack"
                 className="nav-links"
                 onClick={handleClick}
               >
                 Contact Us
-              </NavLink>
+              </a>
             </li>
             
           </ul>

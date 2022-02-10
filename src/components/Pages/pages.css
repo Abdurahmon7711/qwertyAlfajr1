@@ -2,7 +2,22 @@
 
 #home {
   background: #000 url(../../img/stars_bg.png) center repeat;
-  height: 80vh;
+  height:100vh;
+  overflow: hidden;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
+  overflow: hidden;
+}
+.header_slayd{
+  border-radius: 20px !important;
+  height:73vh;
+}
+.awssld {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.awssld__content img{
+  border-radius: 20px !important;
 }
 .sec_name {
   text-align: center;

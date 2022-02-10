@@ -1,9 +1,11 @@
 .navbar {
-  height: 80px;
+  height: 12vh;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 20;
+  position: fixed !important;
+  width: 100%;
   background: #000 url("../img/stars_bg.png") center/cover no-repeat;
 }
 
@@ -14,7 +16,19 @@
   width: 100%;
   max-width: 1500px;
 }
-
+#nav22{
+  position: absolute;
+  top:30px;
+  display: block !important;
+  background-color: #777 ;
+  padding: 20px;
+  width: 100%;
+}
+#nav11{
+  position: absolute;
+  top: -350px;
+  display: block !important;
+}
 .nav-logo img {
   align-items: center;
   cursor: pointer;
@@ -53,10 +67,15 @@
   background: #ffdd40;
 }
 
-.nav-item .active {
-  color: #ffdd40;
+.activee {
+  color: #ffdd40 !important;
   border-bottom: 3px solid #ffdd40;
   border-left: 3px solid #ffdd40;
+}
+.noactive{
+  color: #fff !important;
+  border-bottom: none;
+  border-left: none;
 }
 
 .nav-icon {
