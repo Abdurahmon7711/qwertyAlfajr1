@@ -1,16 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from 'react-router-dom';
+import Team from './Team';
+import Main from './main';
 
-function Router(props) {
+function Router( ) {
     return (
         <div>
-            <BrowserRouter>
-                <Router>
-                    <Switch>
-                        <Route path="/team11" component={Team} exact />
-                    </Switch>
-                </Router>
-            </BrowserRouter>
+        
+                <Switch>
+                    <Route path="/" exact component={Main}/>
+                    <Route path="/teamsss" component={Team} />
+                    
+                    
+                </Switch>
+            
         </div>
     );
 }

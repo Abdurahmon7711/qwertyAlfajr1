@@ -39,18 +39,16 @@ export const Portfolio = () => {
 
             {
               items.map((elem, index) => {
-                console.log(elem);
-                const { iframe } = elem;
+              
+                const { img } = elem;
                 const { aLink } = elem;
-                // var ifr = 
-                // let doc = ifr.contentWindow || ifr.contentDocument;
-                // console.log(doc);
+               
                 
                 return (
 
                   <div data-aos="fade-up"
-                    data-aos-anchor-placement="center-center" key={index} when={show} className="items col-lg-4">
-                    <iframe  className="port-img" src={iframe} />
+                   key={index} when={show} className="items col-lg-4">
+                    <img  className="port-img" src={img} />
                     <a target="_blank" className='port-link about_btn' href={aLink} alt="link">Visit <FaShare className='port_icon' /> </a>
 
                   </div>

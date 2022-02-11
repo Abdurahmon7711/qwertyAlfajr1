@@ -1,10 +1,8 @@
 .navbar {
   height: 12vh;
   font-size: 1.2rem;
-  position: sticky;
   top: 0;
   z-index: 20;
-  position: fixed !important;
   width: 100%;
   background: #000 url("../img/stars_bg.png") center/cover no-repeat;
 }
@@ -82,10 +80,9 @@
   display: none;
 }
 .contact_item{
-  background: transparent;
+  color: #000 !important;
   margin-left: 5px;
   margin-right: 5px;
-  background: transparent;
 }
 .contack_items {
   width: 140px;
@@ -96,8 +93,51 @@
   align-items: center;
   justify-content: center;
 }
+.contack_items a{
+  display: flex;
+}
+.contack_items-nav{
+  display: none;
+}
 
 @media screen and (max-width: 960px) {
+  .contact_item{
+    color: #fff !important;
+    transition: 0.3s;
+  }
+  .contact_item:hover{
+    color: #ffd100 !important;
+  }
+  .port_btn {
+    height: 50px !important;
+    width: 150px !important;
+    font-size: 22px !important;
+}
+.about_btn{
+  width: 180px;
+  height: 50px;
+  font-size: 22px;
+}
+.about_title {
+  font-size: 26px;
+  line-height: 0px;
+  margin-bottom: 50px;
+}
+.about_text{
+  font-size: 21px;
+  line-height: 28px;
+}
+.port-link {
+  margin-top: 30px !important;
+  margin-bottom: 50px !important;
+  height: 50px !important;
+  width: 150px !important;
+  font-size: 22px !important;
+}
+.form_btn {
+  width: 150px;
+  height: 50px;
+}
   .contack_item{
     display: none;
   }

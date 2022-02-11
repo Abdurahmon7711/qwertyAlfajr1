@@ -5,17 +5,16 @@ import './pages.css';
 import Img_about from "../../img/iPhone 1.png"
 import about_name from "../../img/Group 8.svg"
 import Team from "./Team";
-import { Link } from "react-router-dom";
+
 
 export const About = () => {
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
   return (
     <div className="about" id="about">
       <Container>
         <Row>
 
-          <img className="title_name" src={about_name} alt="name"></img>
+          <img className="title_name" src={about_name} alt="name"/>
 
           <section className="about_main col-lg-10 col-md-12">
             <div className="col-lg-6 col-sm-12">
@@ -25,20 +24,15 @@ export const About = () => {
           
                 <NavLink
                   className="about_btn"
-                  exact
-                  to="/Team"
+                  to="/teamsss"
                   activeClassName="active"
-                  onClick={handleClick}
                 >
                   Our Team
                 </NavLink>
-                <Link to="/team11">
-                  ddddddddd
-                </Link>
-           
+                
             </div>
             <div className="col-lg-6 col-sm-12">
-              <img className="about_img" src={Img_about} alt="about_img"></img>
+              <img className="about_img" src={Img_about} alt="about_img"/>
             </div>
           </section>
         </Row>

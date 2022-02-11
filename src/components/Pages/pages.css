@@ -2,15 +2,14 @@
 
 #home {
   background: #000 url(../../img/stars_bg.png) center repeat;
-  height:100vh;
   overflow: hidden;
-  padding-top: 20vh;
+  padding-top: 5vh;
   padding-bottom: 5vh;
   overflow: hidden;
 }
 .header_slayd{
   border-radius: 20px !important;
-  height:73vh;
+  height:70vh;
 }
 .awssld {
   border-radius: 20px;
@@ -129,7 +128,9 @@
   width: 100% !important;
   object-fit: cover;
   width: 320px !important;
+  transition: 0.3s;
 }
+
 .items {
   display: flex;
   flex-direction: column;
@@ -263,7 +264,25 @@
   color: #ffffff;
 }
 
+.backhistory{
+  position: fixed;
+  left: 130px;
+  text-decoration: none;
+  color: #ffD100;
+  top: 35px;
+  font-size: 24px;
+  font-family: Roboto;
+  z-index: 99;
+  cursor: pointer;
 
+  
+}
+.backhistory:hover{
+  color: #ffD100;
+}
+.backhis{
+  font-size: 35px !important;
+}
 
 @media (min-width: 992px) {
   
@@ -277,13 +296,82 @@
     width: 100%;
     position: relative;
   }
-  .team1 {
+  .team_img1{
+    position: relative;
     position: absolute;
     width: 284px;
     height: 376px;
     right: 22px;
     top: 24px;
     border-radius: 15px;
+  }
+  .team_info{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: -0.095em;
+    color: #16181D
+  }
+  .team_info p{
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.025em;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: -12px;
+    margin-bottom: 9px;
+  }
+  .team_icons{
+    color: #fff;
+    font-size: 20px;
+  }
+  .team_icon-1 a, .team_icon-5 a, .team_icon-8 a{
+    color: black;
+  }
+  .team_icon-2 a, .team_icon-3 a, .team_icon-4 a, .team_icon-6 a,  .team_icon-7 a{
+    color: #fff;
+  }
+  .team-icon{
+    height: 20px !important;
+    width: 20px !important;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .team_link1{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    position: relative;
+    bottom: 150px;
+    background: #ffd100;
+    border-radius: 0px 0px 0% 0%;
+    clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
+    border-radius: 0 0 15px 15px;
+  }
+  .team_info1{
+    position: absolute;
+    bottom: 12px;
+    left: 22px;
+  }
+  .team_icon-1{
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+  }
+  .team1 {
+    /* position: absolute;
+    width: 284px;
+    height: 376px;
+    right: 22px;
+    top: 24px;
+    border-radius: 15px; */
   }
   .team_img8 {
     position: relative;
@@ -302,31 +390,75 @@
     top: 41px;
     right: 54px;
   }
-  .team4 {
+  .team_info8{
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+  }
+  .team_icon-8{
+    position: absolute;
+    right: 25px;
+    bottom: 45px;
+    color: #000;
+  }
+  .team_img4 {
     width: 284px;
     height: 214px;
     position: absolute;
     right: 22px;
     bottom: 22px;
   }
-  
-  .team2 {
+  .team_info4{
+    position: absolute;
+    right: 4px;
+    bottom: 18px;
+    color: #ffffff;
+  }
+  .team_icon-4{
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 10px;
+    flex-direction: column;
+  }
+  .team_img2 {
     top: 146px;
     position: absolute;
     right: 330px;
     width: 284px;
     height: 323px;
   }
-  .team3 {
+  .team_info2{
+    position: absolute;
+    left: 22px;
+    bottom: -80px;
+    color: #fff;
+  }
+  .team_icon-2{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+  }
+  .team_img3 {
     top: 557px;
     right: 330px;
     position: absolute;
     width: 538px;
     height: 248px;
     border-radius: 10px;
-    border: 2px solid red;
   }
-  .team7 {
+  .team_info3{
+    position: absolute;
+    bottom: 15px;
+    right: 111px;
+    color: #fff;
+  }
+  .team_icon-3{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+  }
+  .team_img7 {
     position: absolute;
     width: 341px;
     height: 168px;
@@ -334,14 +466,46 @@
     bottom: 22px;
     border-radius: 4px;
   }
-  .team5 {
+  .team_info7{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+  }
+  .team_icon-7{
+    position: absolute;
+    right: 11px;
+    bottom: 11px;
+  }
+  .team_img5 {
     position: absolute;
     width: 349px;
     height: 318px;
     left: 22px;
     top: 684px;
   }
-  .team6 {
+  .team_link5{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    position: relative;
+    background: rgba(255, 209, 0, 0.56);
+    bottom: 90px;
+  }
+  .team_info5{
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    width: 100%;
+  }
+  .team_icon-5{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #000;
+    width: 100%;
+  }
+  .team_img6 {
     position: absolute;
     width: 255px;
     height: 237px;
@@ -349,11 +513,49 @@
     top: 258px;
     border-radius: 10px;
   }
+  .team_info6{
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    color: #fff;
+  }
+  .team_icon-6{
+    position: absolute;
+    top: -35px;
+    right: 30px;
+  }
+}
+
+.topFixed{
+  position: relative;
+  position: fixed;
+  bottom: -45px;
+  right: -45px;
+  height: 90px;
+  width: 90px;
+  background: #ffd100;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px #ffd0008c;
+}
+.fixed_icon{
+  font-size: 20px;
+  position: absolute;
+  left: 18px;
+  top: 16px;
 }
 
 @media (max-width: 992px) {
+  .header_slayd{
+    height: 320px;
+  }
+  .backhistory{
+    left: 20px;
+    top: 10px;
+  }
   .nav-menu.active{
     background: rgba(0, 0, 0, 0.741) !important;
+    padding-bottom: 30px;
+    border: 2px solid black;
   }
   .contack_items{
     display: none;
@@ -393,6 +595,7 @@
     margin-top: 50px;
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
   }
   .team_num{
     width: 320px;
@@ -405,5 +608,35 @@
   .team_num:hover{
     transform: scale(1.2);
   }
-  
+  .team_name{
+    margin-bottom: -5px;
+  }
+  .team_work{
+    margin-bottom: 7px;
+  }
+  .team_info{
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+  }
+  .team_link_med{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #ffd00081;
+  }
+  .team_icons{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  .team_icons a{
+    color: #000;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+  }
 }
